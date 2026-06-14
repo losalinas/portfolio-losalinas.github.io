@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Portfolio Lunetier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&family=DM+Mono:wght@300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- Nav -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">SALINAS Lorenzo · Lunetier</a>
+  <ul class="nav-links">
+    <li><a href="#about">Profil</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#marque">Marque</a></li>
+    <li><a href="#creations">Créations</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Menu mobile overlay -->
+<div class="nav-mobile-overlay" id="mobileMenu">
+  <button class="nav-mobile-close" id="menuClose">Fermer ✕</button>
+  <a href="#about" class="menu-link">Profil</a>
+  <a href="#parcours" class="menu-link">Parcours</a>
+  <a href="#marque" class="menu-link">Marque</a>
+  <a href="#creations" class="menu-link">Créations</a>
+  <a href="#contact" class="menu-link">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <svg class="hero-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="220" x2="1440" y2="220" stroke="rgba(201,168,76,.06)" stroke-width="1"/>
+    <line x1="0" y1="680" x2="1440" y2="680" stroke="rgba(201,168,76,.06)" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="900" stroke="rgba(201,168,76,.05)" stroke-width="1"/>
+  </svg>
+
+  <div class="hero-eyebrow">Artisan lunetier </div>
+
+  <h1 class="hero-h1">
+    <span class="italic">Portfolio</span><br>
+  </h1>
+
+  <p class="hero-sub">Voici mon portfolio, qui présente les montures de lunettes que j’ai conçues et fabriquées à la main, dans différents matériaux tels que l’acétate, la corne et d’autres matières nobles.</p>
+
+  <div class="hero-actions">
+    <a href="#creations" class="btn-gold">Voir les créations →</a>
+    <a href="#about" class="btn-ghost">Mon parcours</a>
+  </div>
+
+  <!-- Lunettes animées -->
+  <svg class="hero-glasses" viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cercles concentriques décoratifs -->
+    <circle cx="130" cy="110" r="96" fill="none" stroke="rgba(201,168,76,.06)" stroke-width="1"/>
+    <circle cx="390" cy="110" r="96" fill="none" stroke="rgba(201,168,76,.06)" stroke-width="1"/>
+    <path class="gp"
+      d="M48,110
+         C48,66 85,30 130,30
+         C175,30 212,66 212,110
+         C212,154 175,190 130,190
+         C85,190 48,154 48,110 Z
+         M212,110 L308,110
+         M308,110
+         C308,66 345,30 390,30
+         C435,30 472,66 472,110
+         C472,154 435,190 390,190
+         C345,190 308,154 308,110 Z
+         M10,82 C30,62 44,78 48,110
+         M472,110 C476,78 490,62 510,82"
+      fill="none" stroke="url(#gg)" stroke-width="2" stroke-linecap="round"/>
+    <defs>
+      <linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#8A6A28"/>
+        <stop offset="50%" stop-color="#E8C96A"/>
+        <stop offset="100%" stop-color="#8A6A28"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</section>
+
+<div class="gold-sep"></div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="eyebrow rev">Profil</div>
+  <h2 class="sec-title rev">Mon parcours en<br><em>quelques mots.</em></h2>
+  <div class="about-wrap">
+    <div class="rev">
+      <blockquote>J’ai toujours été attiré et passionné par la création de lunettes. C’est tout naturellement que je me suis orienté vers le monde de l’optique dès la classe de Seconde. Mes passions pour les travaux manuels et l’artisanat se sont parfaitement accordées avec mon parcours en optique, me permettant de développer un véritable savoir-faire.</blockquote>
+      <p>Cette passion m’a notamment conduit à participer à deux reprises au concours des Meilleurs Apprentis de France. Grâce à mon investissement, ma rigueur et ma créativité, j’ai su me démarquer et obtenir le prestigieux titre d’« Un des Meilleurs Apprentis de France ».</p>
+      <p>Animé par cette même volonté de créer et d’innover, je me suis lancé dans la conception de mes propres montures, jusqu’à développer ma propre marque de lunettes. Aujourd’hui, je souhaite continuer à faire évoluer cette passion en alliant technicité, créativité et excellence artisanale.</p>
+      <div class="maf-pill">
+        <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Lauréat MAF · 2024
+      </div>
+    </div>
+    <div class="rev">
+      <div class="ph" style="width:100%;aspect-ratio:3/4;">
+        <img src="Image/ImageLorenzo.png" class="loaded" alt="Votre portrait"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-sep"></div>
+
+<!-- ═══ PARCOURS ═══ -->
+<section id="parcours">
+  <div class="eyebrow rev">Parcours</div>
+  <h2 class="sec-title rev">Mon cursus<br><em></h2>
+  <div class="tl">
+    <div class="tl-row rev">
+      <div class="tl-year">2021-2024</div>
+      <div class="tl-body">
+        <h3>Formation — Bac PRO Optique-Lunetterie</h3>
+      </div>
+    </div>
+    <div class="tl-row hl rev">
+      <div class="tl-year">2024</div>
+      <div class="tl-body">
+        <h3>Lauréat — Concours MAF</h3>
+        <p>Meilleurs Apprentis de France — Lunettes réalisées entièrement à la main.</p>
+        <div class="maf-pill" style="margin-top:1.2rem;">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Lauréat MAF · 2024
+        </div>
+      </div>
+    </div>
+    <div class="tl-row rev">
+      <div class="tl-year">2024-2026</div>
+      <div class="tl-body">
+        <h3>Formation — BTS OL</h3>
+        <p>Obtention du BTS OL à Fresnel.</p>
+      </div>
+    </div>
+    <div class="tl-row rev">
+      <div class="tl-year">2025</div>
+      <div class="tl-body">
+        <h3>Formation de Conception & Façonnage</h3>
+        <p>Réalisation d'une formation pratique à la Lunetterie de l'Observatoir, par Mr Philippe Delporte</p>
+      </div>
+    </div>
+    <div class="tl-row rev">
+      <div class="tl-year">2026</div>
+      <div class="tl-body">
+        <h3>Maison Lafont</h3>
+        <p>CDD chez La Maison Lafont.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-sep"></div>
+
+<!-- ═══ MARQUE ═══ -->
+<section id="marque">
+  <div class="eyebrow rev">Identité</div>
+  <h2 class="sec-title rev">Ma marque,<br><em>ma signature.</em></h2>
+  <div class="marque-wrap">
+    <div class="rev">
+      <p>La marque « Losa » est tout simplement construite à partir de mes initiales. Elle reflète mon identité et ma vision de la lunetterie. J’ai souhaité concevoir un nom et une identité visuelle en cohérence avec l’élégance de mes montures, afin de créer un ensemble harmonieux et raffiné.</p>
+      <p>Le logo a été entièrement pensé et développé par mes soins. Il est né de ma propre inspiration et a été travaillé avec soin pour traduire au mieux l’esprit de la marque : sobriété, élégance et exigence du détail.</p>
+      <div class="vals">
+        <div class="val"><span class="tick"></span>Calligraphie moderne et épurée</div>
+        <div class="val"><span class="tick"></span>Incrusté sur chaque branche</div>
+        <div class="val"><span class="tick"></span>Trois lunettes déjà réalisés</div>
+        <div class="val"><span class="tick"></span>Acétate Mazzucchelli</div>
+        <div class="val"><span class="tick"></span>Créations uniques</div>
+      </div>
+    </div>
+    <div class="rev" style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div class="ph" style="width:100%;aspect-ratio:1;">
+        <img src="Image/Fichier 1@4x.png" class="loaded" alt="Votre logo"/>
+      </div>
+      <div style="font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,168,76,.3);text-align:center;">Logo de la marque</div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-sep"></div>
+
+<!-- ═══ CRÉATIONS ═══ -->
+<section id="creations">
+  <div class="eyebrow rev">Œuvres</div>
+  <h2 class="sec-title rev">Créations<br><em>à la main.</em></h2>
+  <p class="cr-intro rev">Chaque paire est conçue, découpée, ajustée et polie dans l'atelier de la Lunetterie de l'Observatoire. Une conception qui se passe integralement exclusivement sur place.</p>
+
+  <div class="cr-grid">
+
+    <!-- Grande gauche + 2 petites droite -->
+    <div class="cr-card c1 rev">
+      <div class="ph tall" style="min-height:400px;">
+        <img src="Image/IMG_4853.jpeg" class="loaded" alt="Photo principale lunettes n°1"/>
+      </div>
+      <div class="cr-tag">Acétate · 2026</div>
+      <h4> —  Lunettes en Acétate couleur écaille foncé</h4>
+     </div>
+
+    <div class="c2 rev" style="display:flex;flex-direction:column;gap:1.2rem;">
+      <div class="cr-card">
+        <div class="ph sq" style="min-height:200px;">
+          <img src="Image/20250716_163551.jpeg" class="loaded" alt="Photo n°2"/>
+        </div>
+        <h4> — Lunettes en corne de buffle</h4>
+      </div>
+      <div class="cr-card">
+        <div class="ph sq" style="min-height:200px;">
+          <img src="Image/CC9FD196-0BC6-4F95-A65B-9FE1C38BEED1.jpeg" class="loaded" alt="Détail · Charnière"/>
+        </div>
+        <h4> — Lunettes en Acétate couleur écaille claire</h4>
+      </div>
+    </div>
+
+    <!-- Pièce MAF pleine largeur -->
+    <div class="c3 rev">
+      <div class="maf-card">
+        <div class="ph" style="width:100%;aspect-ratio:16/9;min-height:260px;">
+          <img src="Image/Lunettes.jpeg" class="loaded" alt="Pièce MAF photo principale"/>
+        </div>
+        <div class="maf-info">
+          <div class="cr-tag">Pièce de concours · MAF 2024</div>
+          <h4>Oeuvre MAF — Lunettes sur le thème de l'horlogerie</h4>
+          <p>Cette pièce a été présentée au concours 2024.</p>
+          <div class="maf-pill" style="margin-top:1.5rem;">
+            <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            Lauréat MAF · 2024
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 cartes basses -->
+    <div class="cr-card c4 rev">
+      <div class="ph land" style="min-height:180px;">
+        <img src="Image/Capture d’écran 2026-06-14 132240.png" class="loaded" alt="Photo n°5"/>
+      </div>
+      <h4>Plan de la monture — Concours MAF 2023</h4>
+      <p>Basé sur le thème de la nature et du recyclage.</p>
+    </div>
+    <div class="cr-card c4 rev">
+      <div class="ph land" style="min-height:180px;">
+        <img src="Image/Image1.jpg" class="loaded" alt="Photo atelier"/>
+      </div>
+      <h4>Résultat final</h4>
+      <p>Réalisé à partir de collages, ce projet a été mené à bien après 100 heures de travail.</p>
+    </div>
+    <div class="cr-card c4 rev">
+      <div class="ph land" style="min-height:180px;">
+        <img src="Image/Image2.jpg" class="loaded" alt="Commande sur mesure"/>
+      </div>
+      <div class="cr-tag">En vue de coté</div>
+      <h4>  </h4>
+      <p></p>
+    </div>
+
+  </div>
+</section>
+
+<div class="gold-sep"></div>
+
+<!-- ═══ SAVOIR-FAIRE ═══ -->
+<section id="savoir">
+  <div class="eyebrow rev">Méthode</div>
+  <h2 class="sec-title rev">Le travail<br><em>de l'atelier.</em></h2>
+  <div class="sf-grid">
+    <div class="sf-cell rev">
+      <span class="sf-n">01</span>
+      <h3>Esquisse & mesures</h3>
+      <p>Tout commence par le visage. Prise de mesures, proportions, analyse morphologique — avant de toucher la matière.</p>
+    </div>
+    <div class="sf-cell rev">
+      <span class="sf-n">02</span>
+      <h3>Découpe & mise en forme</h3>
+      <p>Fraisage, découpe à la main, mise en forme à chaud. Les outils sont simples. Le geste, moins.</p>
+    </div>
+    <div class="sf-cell rev">
+      <span class="sf-n">03</span>
+      <h3>Ajustage & assemblage</h3>
+      <p>Charnières à riveter, l'assemblage face-branche est  très minutieux.</p>
+    </div>
+    <div class="sf-cell rev">
+      <span class="sf-n">04</span>
+      <h3>Finition & polissage</h3>
+      <p>Touret à polir, tonneaux , pâte a polir. La surface est polie en profondeur .</p>
+    </div>
+  </div>
+</section>
+
+<div class="gold-sep"></div>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="eyebrow rev" style="justify-content:center;">Contact</div>
+  <div class="contact-big rev">
+    Merci<br>d'avoir pris le temps de parcourir mon <em>portfolio.</em>
+  </div>
+  <p class="rev" style="color:var(--cream3);margin-bottom:2.5rem;font-size:.95rem;">Pour toutes questions ⬇️</p>
+  <a href="mailto:votre@email.com" class="contact-mail rev">lo.salinas@icloud.com</a>
+  <div class="orn rev">
+    <svg width="260" height="90" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M48,90 C48,52 82,22 126,22 C170,22 204,52 204,90 C204,128 170,158 126,158 C82,158 48,128 48,90 Z M204,90 L316,90 M316,90 C316,52 350,22 394,22 C438,22 472,52 472,90 C472,128 438,158 394,158 C350,158 316,128 316,90 Z M10,66 C28,50 42,64 48,90 M472,90 C478,64 492,50 510,66"
+        stroke="url(#go)" stroke-width="1.5" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="go" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="rgba(138,106,40,0)"/>
+          <stop offset="50%" stop-color="#C9A84C"/>
+          <stop offset="100%" stop-color="rgba(138,106,40,0)"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<footer>
+  <span>Salinas Lorenzo</span> · Lunetier artisan · <span>Paris</span> · Tous droits réservés
+</footer>
+
+<script>
+function loadImg(input){
+  if(!input.files||!input.files[0])return;
+  const r=new FileReader();
+  r.onload=e=>{
+    const ph=input.closest('.ph');
+    ph.querySelector('img.loaded')?.remove();
+    ph.querySelectorAll('svg,span').forEach(el=>el.style.display='none');
+    const img=document.createElement('img');
+    img.src=e.target.result;img.className='loaded';
+    ph.insertBefore(img,input);
+  };
+  r.readAsDataURL(input.files[0]);
+}
+
+window.addEventListener('scroll',()=>
+  document.getElementById('nav').classList.toggle('on',scrollY>50)
+);
+
+// Menu hamburger
+const burger=document.getElementById('burger');
+const mobileMenu=document.getElementById('mobileMenu');
+const menuClose=document.getElementById('menuClose');
+function openMenu(){burger.classList.add('open');mobileMenu.classList.add('open');document.body.style.overflow='hidden';}
+function closeMenu(){burger.classList.remove('open');mobileMenu.classList.remove('open');document.body.style.overflow='';}
+burger.addEventListener('click',()=>mobileMenu.classList.contains('open')?closeMenu():openMenu());
+menuClose.addEventListener('click',closeMenu);
+document.querySelectorAll('.menu-link').forEach(l=>l.addEventListener('click',closeMenu));
+
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.rev').forEach(el=>obs.observe(el));
+
+const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+document.addEventListener('mousemove',e=>{
+  cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';
+  setTimeout(()=>{ring.style.left=e.clientX+'px';ring.style.top=e.clientY+'px';},80);
+});
+</script>
+</body>
+</html>
