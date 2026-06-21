@@ -267,7 +267,17 @@ section{padding:clamp(5rem,10vw,10rem) clamp(2rem,6vw,6rem);}
   background:var(--gold);border-radius:50%;
 }
 
-/* ─ CRÉATIONS ─ */
+/* ─ MARQUE photos côte à côte ─ */
+.marque-photos-only{
+  display:flex;
+  flex-direction:row;
+  gap:1.2rem;
+  margin-top:3rem;
+}
+.marque-ph{
+  flex:1;
+  aspect-ratio:1;
+}
 #creations{background:var(--g3);}
 .cr-intro{color:var(--cream3);font-size:1rem;line-height:1.9;max-width:50ch;margin-top:1.5rem;margin-bottom:4.5rem;}
 
